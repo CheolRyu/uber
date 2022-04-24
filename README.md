@@ -1,4 +1,4 @@
-# My Universal React Project
+# React and react native project. UBER EATS CLONE
 
 <p>
   <!-- iOS -->
