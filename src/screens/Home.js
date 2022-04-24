@@ -1,5 +1,5 @@
 import { View, Text, SafeAreaView, ScrollView } from "react-native";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import HeaderTabs from "../components/HeaderTabs";
 import Searchbar from "../components/SearchBar";
 import Categories from "../components/Categories";
@@ -11,10 +11,10 @@ const YELP_API_KEY =
   "V4TfFyhZkYEsskZx1vVeJyoyQfLqViTjUftHRItbyiwjT1bmKLLBqHyNg-fFgffSpakeDqpDMRGuqICGyifzGy1WBdKbvqIO62uD2kD97vcTjkLC8UBBvZrl5_pVYnYx";
 
 export default function Home() {
-  const [restaurantData, setRestaurantData] = React.useState(localRestaurants);
+  const [restaurantData, setRestaurantData] = useState(localRestaurants);
+  const [city, setCity] = useState("Santa Barbara");
   const getRestaurantFromYelp = () => {
-    const yelpUrl =
-      "https://api.yelp.com/v3/businesses/search?term=restaurants&location=SantaBarbara";
+    const yelpUrl = `https://api.yelp.com/v3/businesses/search?term=restaurants&location=${city}`;
 
     const apiOptions = {
       headers: {
@@ -27,12 +27,12 @@ export default function Home() {
   };
   useEffect(() => {
     getRestaurantFromYelp();
-  }, []);
+  }, [city]);
   return (
     <SafeAreaView style={{ backgroundColor: "#eee", flex: 1 }}>
       <View style={{ backgroundColor: "white", padding: 15 }}>
         <HeaderTabs />
-        <Searchbar />
+        <Searchbar cityhandler={setCity} />
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>
         <Categories />
