@@ -3,31 +3,31 @@ import React from "react";
 
 const items = [
   {
-    images: require("../../assets/images/shopping-bag.png"),
+    images: require("../../../assets/images/shopping-bag.png"),
     text: "Pick Up",
   },
   {
-    images: require("../../assets/images/bread.png"),
+    images: require("../../../assets/images/bread.png"),
     text: "Bakery Items",
   },
   {
-    images: require("../../assets/images/fast-food.png"),
+    images: require("../../../assets/images/fast-food.png"),
     text: "Fast Food",
   },
   {
-    images: require("../../assets/images/deals.png"),
+    images: require("../../../assets/images/deals.png"),
     text: "Deals",
   },
   {
-    images: require("../../assets/images/coffee.png"),
+    images: require("../../../assets/images/coffee.png"),
     text: "Coffee",
   },
   {
-    images: require("../../assets/images/desserts.png"),
+    images: require("../../../assets/images/desserts.png"),
     text: "Dessert",
   },
   {
-    images: require("../../assets/images/soft-drink.png"),
+    images: require("../../../assets/images/soft-drink.png"),
     text: "Soft Drinks",
   },
   {
