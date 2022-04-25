@@ -41,6 +41,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:17.0.1"],\
           ["react-dom", "virtual:b1fc75f2cccee1d27a8d935669e8a10bc781cda268684bd9bfefd001ddcdd5bad19cbc77387d446700e2fed6585a6954d536470e0a674a2122c867cb2bdd12d8#npm:17.0.1"],\
           ["react-native", "virtual:b1fc75f2cccee1d27a8d935669e8a10bc781cda268684bd9bfefd001ddcdd5bad19cbc77387d446700e2fed6585a6954d536470e0a674a2122c867cb2bdd12d8#npm:0.64.3"],\
+          ["react-native-elements", "virtual:b1fc75f2cccee1d27a8d935669e8a10bc781cda268684bd9bfefd001ddcdd5bad19cbc77387d446700e2fed6585a6954d536470e0a674a2122c867cb2bdd12d8#npm:3.4.2"],\
           ["react-native-google-places-autocomplete", "virtual:b1fc75f2cccee1d27a8d935669e8a10bc781cda268684bd9bfefd001ddcdd5bad19cbc77387d446700e2fed6585a6954d536470e0a674a2122c867cb2bdd12d8#npm:2.4.1"],\
           ["react-native-vector-icons", "npm:9.1.0"],\
           ["react-native-web", "virtual:b1fc75f2cccee1d27a8d935669e8a10bc781cda268684bd9bfefd001ddcdd5bad19cbc77387d446700e2fed6585a6954d536470e0a674a2122c867cb2bdd12d8#npm:0.17.1"]\
@@ -3732,6 +3733,57 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/prop-types", [\
+      ["npm:15.7.5", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-prop-types-npm-15.7.5-2aa48aa177-9.zip/node_modules/@types/prop-types/",\
+        "packageDependencies": [\
+          ["@types/prop-types", "npm:15.7.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/react", [\
+      ["npm:18.0.6", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-react-npm-18.0.6-dfd79650e5-9.zip/node_modules/@types/react/",\
+        "packageDependencies": [\
+          ["@types/react", "npm:18.0.6"],\
+          ["@types/prop-types", "npm:15.7.5"],\
+          ["@types/scheduler", "npm:0.16.2"],\
+          ["csstype", "npm:3.0.11"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/react-native", [\
+      ["npm:0.67.6", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-react-native-npm-0.67.6-8f2f160750-9.zip/node_modules/@types/react-native/",\
+        "packageDependencies": [\
+          ["@types/react-native", "npm:0.67.6"],\
+          ["@types/react", "npm:18.0.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/react-native-vector-icons", [\
+      ["npm:6.4.10", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-react-native-vector-icons-npm-6.4.10-9a802156cb-9.zip/node_modules/@types/react-native-vector-icons/",\
+        "packageDependencies": [\
+          ["@types/react-native-vector-icons", "npm:6.4.10"],\
+          ["@types/react", "npm:18.0.6"],\
+          ["@types/react-native", "npm:0.67.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/scheduler", [\
+      ["npm:0.16.2", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-scheduler-npm-0.16.2-ba3a7d8c68-9.zip/node_modules/@types/scheduler/",\
+        "packageDependencies": [\
+          ["@types/scheduler", "npm:0.16.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/yargs", [\
       ["npm:15.0.14", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-yargs-npm-15.0.14-07ba249dbb-9.zip/node_modules/@types/yargs/",\
@@ -4902,6 +4954,17 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["color", [\
+      ["npm:3.2.1", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/color-npm-3.2.1-568cf1014f-9.zip/node_modules/color/",\
+        "packageDependencies": [\
+          ["color", "npm:3.2.1"],\
+          ["color-convert", "npm:1.9.3"],\
+          ["color-string", "npm:1.9.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["color-convert", [\
       ["npm:1.9.3", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/color-convert-npm-1.9.3-1fe690075e-9.zip/node_modules/color-convert/",\
@@ -4932,6 +4995,17 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/color-name-npm-1.1.4-025792b0ea-9.zip/node_modules/color-name/",\
         "packageDependencies": [\
           ["color-name", "npm:1.1.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["color-string", [\
+      ["npm:1.9.1", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/color-string-npm-1.9.1-dc020e56be-9.zip/node_modules/color-string/",\
+        "packageDependencies": [\
+          ["color-string", "npm:1.9.1"],\
+          ["color-name", "npm:1.1.4"],\
+          ["simple-swizzle", "npm:0.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5203,6 +5277,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["csstype", [\
+      ["npm:3.0.11", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/csstype-npm-3.0.11-b49897178d-9.zip/node_modules/csstype/",\
+        "packageDependencies": [\
+          ["csstype", "npm:3.0.11"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["dayjs", [\
       ["npm:1.11.1", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/dayjs-npm-1.11.1-aef2935f8f-9.zip/node_modules/dayjs/",\
@@ -5288,6 +5371,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/deepmerge-npm-3.3.0-b15e2840d6-9.zip/node_modules/deepmerge/",\
         "packageDependencies": [\
           ["deepmerge", "npm:3.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:4.2.2", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/deepmerge-npm-4.2.2-112165ced2-9.zip/node_modules/deepmerge/",\
+        "packageDependencies": [\
+          ["deepmerge", "npm:4.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6787,6 +6877,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["hoist-non-react-statics", [\
+      ["npm:3.3.2", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/hoist-non-react-statics-npm-3.3.2-e7b709e6c1-9.zip/node_modules/hoist-non-react-statics/",\
+        "packageDependencies": [\
+          ["hoist-non-react-statics", "npm:3.3.2"],\
+          ["react-is", "npm:16.13.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["http-cache-semantics", [\
       ["npm:4.1.0", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/http-cache-semantics-npm-4.1.0-860520a31f-9.zip/node_modules/http-cache-semantics/",\
@@ -7020,6 +7120,13 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/is-arrayish-npm-0.2.1-23927dfb15-9.zip/node_modules/is-arrayish/",\
         "packageDependencies": [\
           ["is-arrayish", "npm:0.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:0.3.2", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/is-arrayish-npm-0.3.2-f856180f79-9.zip/node_modules/is-arrayish/",\
+        "packageDependencies": [\
+          ["is-arrayish", "npm:0.3.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9028,6 +9135,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["opencollective-postinstall", [\
+      ["npm:2.0.3", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/opencollective-postinstall-npm-2.0.3-954643c36b-9.zip/node_modules/opencollective-postinstall/",\
+        "packageDependencies": [\
+          ["opencollective-postinstall", "npm:2.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["optionator", [\
       ["npm:0.9.1", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/optionator-npm-0.9.1-577e397aae-9.zip/node_modules/optionator/",\
@@ -9612,6 +9728,38 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["react-native-elements", [\
+      ["npm:3.4.2", {\
+        "packageLocation": "./.yarn/unplugged/react-native-elements-virtual-c59d97415f/node_modules/react-native-elements/",\
+        "packageDependencies": [\
+          ["react-native-elements", "npm:3.4.2"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:b1fc75f2cccee1d27a8d935669e8a10bc781cda268684bd9bfefd001ddcdd5bad19cbc77387d446700e2fed6585a6954d536470e0a674a2122c867cb2bdd12d8#npm:3.4.2", {\
+        "packageLocation": "./.yarn/unplugged/react-native-elements-virtual-c59d97415f/node_modules/react-native-elements/",\
+        "packageDependencies": [\
+          ["react-native-elements", "virtual:b1fc75f2cccee1d27a8d935669e8a10bc781cda268684bd9bfefd001ddcdd5bad19cbc77387d446700e2fed6585a6954d536470e0a674a2122c867cb2bdd12d8#npm:3.4.2"],\
+          ["@types/react-native-safe-area-context", null],\
+          ["@types/react-native-vector-icons", "npm:6.4.10"],\
+          ["color", "npm:3.2.1"],\
+          ["deepmerge", "npm:4.2.2"],\
+          ["hoist-non-react-statics", "npm:3.3.2"],\
+          ["lodash.isequal", "npm:4.5.0"],\
+          ["opencollective-postinstall", "npm:2.0.3"],\
+          ["react-native-ratings", "virtual:c59d97415f850c4140d31631e54d32e8e350cfd24ca4f1c1c7ac9631a852b509d9df9f73ccab64c4302a2c336d55b08e8da6800994c0f9aaea8acd0ca6157784#npm:8.0.4"],\
+          ["react-native-safe-area-context", null],\
+          ["react-native-size-matters", "virtual:c59d97415f850c4140d31631e54d32e8e350cfd24ca4f1c1c7ac9631a852b509d9df9f73ccab64c4302a2c336d55b08e8da6800994c0f9aaea8acd0ca6157784#npm:0.3.1"],\
+          ["react-native-vector-icons", "npm:9.1.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-native-safe-area-context",\
+          "react-native-safe-area-context",\
+          "react-native-vector-icons"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["react-native-google-places-autocomplete", [\
       ["npm:2.4.1", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/react-native-google-places-autocomplete-npm-2.4.1-16d9603f67-9.zip/node_modules/react-native-google-places-autocomplete/",\
@@ -9629,6 +9777,55 @@ const RAW_RUNTIME_STATE =
           ["prop-types", "npm:15.8.1"],\
           ["qs", "npm:6.9.7"],\
           ["react-native", "virtual:b1fc75f2cccee1d27a8d935669e8a10bc781cda268684bd9bfefd001ddcdd5bad19cbc77387d446700e2fed6585a6954d536470e0a674a2122c867cb2bdd12d8#npm:0.64.3"]\
+        ],\
+        "packagePeers": [\
+          "@types/react-native",\
+          "react-native"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-native-ratings", [\
+      ["npm:8.0.4", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/react-native-ratings-npm-8.0.4-12a49aa3db-9.zip/node_modules/react-native-ratings/",\
+        "packageDependencies": [\
+          ["react-native-ratings", "npm:8.0.4"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:c59d97415f850c4140d31631e54d32e8e350cfd24ca4f1c1c7ac9631a852b509d9df9f73ccab64c4302a2c336d55b08e8da6800994c0f9aaea8acd0ca6157784#npm:8.0.4", {\
+        "packageLocation": "./.yarn/__virtual__/react-native-ratings-virtual-4691ba642c/4/AppData/Local/Yarn/Berry/cache/react-native-ratings-npm-8.0.4-12a49aa3db-9.zip/node_modules/react-native-ratings/",\
+        "packageDependencies": [\
+          ["react-native-ratings", "virtual:c59d97415f850c4140d31631e54d32e8e350cfd24ca4f1c1c7ac9631a852b509d9df9f73ccab64c4302a2c336d55b08e8da6800994c0f9aaea8acd0ca6157784#npm:8.0.4"],\
+          ["@types/react", null],\
+          ["@types/react-native", null],\
+          ["lodash", "npm:4.17.21"],\
+          ["react", null],\
+          ["react-native", null]\
+        ],\
+        "packagePeers": [\
+          "@types/react-native",\
+          "@types/react",\
+          "react-native",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["react-native-size-matters", [\
+      ["npm:0.3.1", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/react-native-size-matters-npm-0.3.1-031cb1f4a2-9.zip/node_modules/react-native-size-matters/",\
+        "packageDependencies": [\
+          ["react-native-size-matters", "npm:0.3.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:c59d97415f850c4140d31631e54d32e8e350cfd24ca4f1c1c7ac9631a852b509d9df9f73ccab64c4302a2c336d55b08e8da6800994c0f9aaea8acd0ca6157784#npm:0.3.1", {\
+        "packageLocation": "./.yarn/__virtual__/react-native-size-matters-virtual-c1f1ceff29/4/AppData/Local/Yarn/Berry/cache/react-native-size-matters-npm-0.3.1-031cb1f4a2-9.zip/node_modules/react-native-size-matters/",\
+        "packageDependencies": [\
+          ["react-native-size-matters", "virtual:c59d97415f850c4140d31631e54d32e8e350cfd24ca4f1c1c7ac9631a852b509d9df9f73ccab64c4302a2c336d55b08e8da6800994c0f9aaea8acd0ca6157784#npm:0.3.1"],\
+          ["@types/react-native", null],\
+          ["react-native", null]\
         ],\
         "packagePeers": [\
           "@types/react-native",\
@@ -10347,6 +10544,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["simple-swizzle", [\
+      ["npm:0.2.2", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/simple-swizzle-npm-0.2.2-8dee37fad1-9.zip/node_modules/simple-swizzle/",\
+        "packageDependencies": [\
+          ["simple-swizzle", "npm:0.2.2"],\
+          ["is-arrayish", "npm:0.3.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["sisteransi", [\
       ["npm:1.0.5", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/sisteransi-npm-1.0.5-af60cc0cfa-9.zip/node_modules/sisteransi/",\
@@ -10973,6 +11180,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:17.0.1"],\
           ["react-dom", "virtual:b1fc75f2cccee1d27a8d935669e8a10bc781cda268684bd9bfefd001ddcdd5bad19cbc77387d446700e2fed6585a6954d536470e0a674a2122c867cb2bdd12d8#npm:17.0.1"],\
           ["react-native", "virtual:b1fc75f2cccee1d27a8d935669e8a10bc781cda268684bd9bfefd001ddcdd5bad19cbc77387d446700e2fed6585a6954d536470e0a674a2122c867cb2bdd12d8#npm:0.64.3"],\
+          ["react-native-elements", "virtual:b1fc75f2cccee1d27a8d935669e8a10bc781cda268684bd9bfefd001ddcdd5bad19cbc77387d446700e2fed6585a6954d536470e0a674a2122c867cb2bdd12d8#npm:3.4.2"],\
           ["react-native-google-places-autocomplete", "virtual:b1fc75f2cccee1d27a8d935669e8a10bc781cda268684bd9bfefd001ddcdd5bad19cbc77387d446700e2fed6585a6954d536470e0a674a2122c867cb2bdd12d8#npm:2.4.1"],\
           ["react-native-vector-icons", "npm:9.1.0"],\
           ["react-native-web", "virtual:b1fc75f2cccee1d27a8d935669e8a10bc781cda268684bd9bfefd001ddcdd5bad19cbc77387d446700e2fed6585a6954d536470e0a674a2122c867cb2bdd12d8#npm:0.17.1"]\
