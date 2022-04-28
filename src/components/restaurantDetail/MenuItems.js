@@ -64,30 +64,38 @@ const foods = [
 
 export default function MenuItems() {
   return (
-    <ScrollView showsVerticalScrollIndicator={false}>
-      {foods.map((food, index) => (
-        <View key={index}>
-          <View style={styles.menuItemStyle}>
-            <BouncyCheckbox
-              iconStyle={{ borderColor: 'lightgray', borderRadius: 5 }}
-              fillColor='black'
+    <View>
+      <ScrollView showsVerticalScrollIndicator={false}>
+        {foods.map((food, index) => (
+          <View key={index}>
+            <View style={styles.menuItemStyle}>
+              <BouncyCheckbox
+                iconStyle={{ borderColor: 'lightgray', borderRadius: 0 }}
+                fillColor='black'
+              />
+              <FoodInfo food={food} />
+              <FoodImage food={food} />
+            </View>
+            <Divider
+              width={0.5}
+              orientation='vertical'
+              style={{ marginHorizontal: 20 }}
             />
-            <FoodInfo food={food} />
-            <FoodImage food={food} />
           </View>
-          <Divider
-            width={0.5}
-            orientation='vertical'
-            style={{ marginHorizontal: 20 }}
-          />
-        </View>
-      ))}
-    </ScrollView>
+        ))}
+      </ScrollView>
+    </View>
   );
 }
 
 const FoodInfo = (props) => (
-  <View style={{ width: 240, justifyContent: 'space-evenly' }}>
+  <View
+    style={{
+      width: 190,
+      justifyContent: 'space-evenly',
+      marginRight: 15,
+    }}
+  >
     <Text style={styles.titleStyle}>{props.food.title}</Text>
     <Text>{props.food.description}</Text>
     <Text>{props.food.price}</Text>
@@ -95,8 +103,15 @@ const FoodInfo = (props) => (
 );
 
 const FoodImage = (props) => (
-  <Image
-    source={{ uri: props.food.image }}
-    style={{ height: 100, width: 100, borderRadius: 10 }}
-  />
+  <View>
+    <Image
+      source={{ uri: props.food.image }}
+      style={{
+        height: 80,
+        width: 80,
+        borderRadius: 5,
+        marginLeft: 0,
+      }}
+    />
+  </View>
 );
