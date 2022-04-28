@@ -40,20 +40,35 @@ export const localRestaurants = [
     rating: 4.5,
   },
 ];
-export default function RestaurantItems(props) {
+export default function RestaurantItems({ navigation, ...props }) {
   //getting data from parent components
   return (
-    <TouchableOpacity activeOpacity={1} style={{ marginBottom: 20 }}>
+    <>
       {props.restaurantData.map((restaurant, index) => (
-        <View
-          style={{ marginTop: 10, padding: 15, backgroundColor: 'white' }}
+        <TouchableOpacity
           key={index}
+          onPress={() => {
+            navigation.navigate('RestaurantDetail', {
+              name: restaurant.name,
+              image: restaurant.image_url,
+              price: restaurant.price,
+              reviews: restaurant.review_count,
+              rating: restaurant.rating,
+              categories: restaurant.categories,
+            });
+          }}
+          activeOpacity={1}
+          style={{ marginBottom: 30 }}
         >
-          <ResutaurantImage image={restaurant.image_url} />
-          <RestaurantInfo name={restaurant.name} rating={restaurant.rating} />
-        </View>
+          <View
+            style={{ marginTop: 10, padding: 15, backgroundColor: 'white' }}
+          >
+            <ResutaurantImage image={restaurant.image_url} />
+            <RestaurantInfo name={restaurant.name} rating={restaurant.rating} />
+          </View>
+        </TouchableOpacity>
       ))}
-    </TouchableOpacity>
+    </>
   );
 }
 
@@ -63,7 +78,7 @@ const ResutaurantImage = (props) => (
       source={{
         uri: props.image,
       }}
-      style={{ width: '100%', height: 180 }}
+      style={{ width: '100%', height: 180, borderRadius: 10 }}
     />
     <TouchableOpacity style={{ position: 'absolute', top: 20, right: 20 }}>
       <MaterialCommunityIcons name='heart-outline' size={25} color='#ffffff' />
