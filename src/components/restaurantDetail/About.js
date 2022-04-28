@@ -1,17 +1,18 @@
-import { View, Text, Image } from "react-native";
-import React from "react";
+import { View, Text, Image } from 'react-native';
+import React from 'react';
 
-const image =
-  "https://media-cdn.tripadvisor.com/media/photo-s/1a/18/3a/cb/restaurant-le-47.jpg";
+export default function About(props) {
+  const { name, image, price, reviews, rating, categories } =
+    props.route.params;
+  const formatedCategories = categories.map((cat) => cat.title).join(' • ');
+  const description = `${formatedCategories} ${
+    price ? ' • ' + price : ''
+  } • 🎫 • ${rating} ⭐️ ${reviews}+`;
 
-const title = "Farmhouse Kitchen Thai Cuisine";
-const description = "Thai - comfort Food - $$ - :star (2000)";
-
-export default function About() {
   return (
     <View>
       <RestaurantImage image={image} />
-      <RestaurantTitle title={title} />
+      <RestaurantName name={name} />
       <RestaurantDescription description={description} />
     </View>
   );
@@ -22,20 +23,20 @@ const RestaurantImage = (props) => (
     source={{
       uri: props.image,
     }}
-    style={{ width: "100%", height: 180 }}
+    style={{ width: '100%', height: 180 }}
   />
 );
 
-const RestaurantTitle = (props) => (
+const RestaurantName = (props) => (
   <Text
     style={{
       fontSize: 29,
-      fontWeight: "600",
+      fontWeight: '600',
       marginTop: 10,
       marginHorizontal: 15,
     }}
   >
-    {props.title}
+    {props.name}
   </Text>
 );
 
@@ -44,7 +45,7 @@ const RestaurantDescription = (props) => (
     style={{
       marginTop: 10,
       marginHorizontal: 15,
-      fontWeight: "400",
+      fontWeight: '400',
       fontSize: 15.5,
     }}
   >
