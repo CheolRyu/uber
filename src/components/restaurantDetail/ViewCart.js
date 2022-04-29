@@ -1,7 +1,17 @@
 import { View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
+import { useSelector } from 'react-redux';
+export default function ViewCart({ navigation }) {
+  const items = useSelector((state) => state.cartReducer.selectItems.items);
+  const total = items
+    .map((item) => Number(item.price.replace('$', '')))
+    .reduce((prev, curr) => prev + curr, 0);
 
-export default function ViewCart() {
+  const totalUSD = total.toLocaleString('en', {
+    style: 'currency',
+    currency: 'USD',
+  });
+  console.log(totalUSD);
   return (
     <View
       style={{

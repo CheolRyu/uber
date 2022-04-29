@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, Image, ScrollView } from 'react-native';
 import React from 'react';
 import { Divider } from 'react-native-elements';
 import BouncyCheckbox from 'react-native-bouncy-checkbox';
+import { useDispatch } from 'react-redux';
 
 const styles = StyleSheet.create({
   menuItemStyle: {
@@ -62,7 +63,17 @@ const foods = [
   },
 ];
 
-export default function MenuItems() {
+export default function MenuItems({ restaurantName }) {
+  const dispatch = useDispatch(); // onPress, I want this function to add the items
+  const selectItem = (item, checkboxValue) =>
+    dispatch({
+      type: 'ADD_TO_CART',
+      payload: {
+        ...item,
+        restaurantName: restaurantName,
+        checkboxValue: checkboxValue,
+      },
+    });
   return (
     <View>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -72,6 +83,7 @@ export default function MenuItems() {
               <BouncyCheckbox
                 iconStyle={{ borderColor: 'lightgray', borderRadius: 0 }}
                 fillColor='black'
+                onPress={(checkboxValue) => selectItem(food, checkboxValue)}
               />
               <FoodInfo food={food} />
               <FoodImage food={food} />
